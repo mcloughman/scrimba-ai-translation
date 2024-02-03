@@ -17,7 +17,6 @@ function App() {
 
   const translateText = async () => {
     try {
-      console.log("User input", userInput)
       const response = await openai.chat.completions.create({
         model: "gpt-3.5-turbo",
         messages: [
